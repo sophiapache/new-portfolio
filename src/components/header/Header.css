@@ -1,0 +1,6 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between; /* Aligns the left and right components to the ends of the container */
+  align-items: center; /* Vertically center the components */
+  height: 10vh; /* Adjust the height as needed */
+}

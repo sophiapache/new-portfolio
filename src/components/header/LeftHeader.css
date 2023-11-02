@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+.leftHeader {
+  display: flex;
+  flex: 1; /* Allows the left component to expand to fill available space */
+  padding: 20px; /* Adjust padding as needed */
+  /* width: 298px;
+  height: 10vh;
+  flex-direction: column;
+  justify-content: center; */
+  color: #fff;
+
+  font-family: "Press Start 2P";
+  font-size: 8vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
