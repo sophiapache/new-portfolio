@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+.sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  top: 32%;
+  left: 40%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.sections div {
+  /* aspect-ratio: 2 / 1; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 0px 45px 0px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 500;
+}

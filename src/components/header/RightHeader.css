@@ -1,10 +1,5 @@
 .rightHeader {
   display: flex;
-  /* width: 298px;
-  height: 10vh;
-  flex-direction: column;
-  justify-content: flex-end;  */
-  /* flex: 1; Allows the left component to expand to fill available space */
   padding: 20px; /* Adjust padding as needed */
   margin-left: auto;
   color: #fff;
@@ -14,4 +9,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.element {
+  padding: 15px;
 }
