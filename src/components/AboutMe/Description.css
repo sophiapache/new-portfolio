@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Red+Hat+Mono:wght@500&display=swap");
+.description {
+  color: #fff;
+  font-family: "Red Hat Mono";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: absolute;
+}

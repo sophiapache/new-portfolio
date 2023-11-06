@@ -1,6 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Home from "./routes/Home";
+import AboutMe from "./routes/AboutMe";
+import Work from "./routes/Work";
 import * as ReactDOM from "react-dom/client";
 
 function App() {
@@ -8,16 +10,16 @@ function App() {
     {
       path: "/",
       element: <Home />,
-      // children: [
-      //   {
-      //     path: "",
-      //     element: <Home />,
-      //   },
-      //   {
-      //     path: "contact-me",
-      //     element: <ContactMe />,
-      //   },
-      // ],
+      children: [
+        {
+          path: "/aboutme",
+          element: <AboutMe />,
+        },
+        {
+          path: "/work",
+          element: <Work />,
+        },
+      ],
     },
   ]);
   ReactDOM.createRoot(document.getElementById("root")).render(

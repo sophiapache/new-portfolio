@@ -1,5 +1,8 @@
 import "./Sections.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import AboutMe from "../AboutMe/AboutMe";
+
 const sections = [
   {
     id: 6589,
@@ -27,13 +30,29 @@ const sections = [
   },
 ];
 
-const Sections = () => {
-  const [selectView, setView] = useState(null);
+const Sections = ({ selectView, setView }) => {
+  // const [selectView, setView] = useState("");
+
+  useEffect(() => {
+    console.log(selectView);
+  }, [selectView]);
 
   function handleClick(view) {
-    console.log(view);
-    setView(view !== selectView ? view : null);
-    console.log(selectView);
+    setView(view);
+    // switch (view) {
+    //   case "ABOUT ME":
+    //     <Route exact path="/">
+    //       <Redirect to="/aboutme" />
+    //     </Route>;
+    //     console.log("about me");
+    //     break;
+    //   case "WORK":
+    //     // Additional actions for the "work" case
+    //     break;
+    //   default:
+    //     console.log("View is neither 'about me' nor 'work'");
+    //   // Additional actions for other cases
+    // }
   }
 
   return (
@@ -42,7 +61,7 @@ const Sections = () => {
         <div
           key={section.id}
           onClick={() => handleClick(section.view)}
-          className={section.view === selectView ? "selected" : ""}
+          className={section.view == selectView ? "selected" : ""}
         >
           {section.view}
         </div>
