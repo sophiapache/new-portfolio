@@ -1,23 +1,74 @@
 import "./Hero.css";
 import { TypeAnimation } from "react-type-animation";
+import LoadingScreen from "../components/Loading/LoadingScreen";
 import Sections from "../components/Sections/Sections";
 import AboutMe from "../components/AboutMe/AboutMe";
 import Work from "../components/Work/Work";
+import Skills from "../components/Skills/Skills";
+import Projects from "../components/Projects/Projects";
+import Refs from "../components/Refs/Refs";
+import Hobbies from "../components/Hobbies/Hobbies";
+import Subheader from "../components/header/Subheader";
 import React, { useState, useEffect } from "react";
 
 const Hero = () => {
   const [selectView, setView] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
 
-  if (selectView === "ABOUT ME") {
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="heroDiv">
+        <LoadingScreen />
+      </div>
+    );
+  } else if (selectView === "ABOUT ME") {
     return (
       <div className="aboutMeContainer">
+        <Subheader selectView={selectView} setView={setView} />;
         <AboutMe />;
       </div>
     );
   } else if (selectView === "WORK") {
     return (
       <div className="WorkContainer">
+        <Subheader selectView={selectView} setView={setView} />;
         <Work />;
+      </div>
+    );
+  } else if (selectView === "SKILLS") {
+    return (
+      <div className="skillsContainer">
+        <Subheader selectView={selectView} setView={setView} />;
+        <Skills />;
+      </div>
+    );
+  } else if (selectView === "PROJECTS") {
+    return (
+      <div className="projectsContainer">
+        <Subheader selectView={selectView} setView={setView} />;
+        <Projects />;
+      </div>
+    );
+  } else if (selectView === "REFS") {
+    return (
+      <div className="refsContainer">
+        <Subheader selectView={selectView} setView={setView} />;
+        <Refs />;
+      </div>
+    );
+  } else if (selectView === "HOBBIES") {
+    return (
+      <div className="hobbiesContainer">
+        <Subheader selectView={selectView} setView={setView} />;
+        <Hobbies />;
       </div>
     );
   } else {

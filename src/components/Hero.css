@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("imgs/arcade.jpg");
+  background-image: url("arcade.jpg");
   height: 90vh;
   width: 40vw;
   background-size: cover;
@@ -34,6 +34,14 @@
   display: flex;
   justify-content: space-between;
 }
+
+.workContainer {
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 1px 50px 1px;
+}
+
 @media screen and (max-width: 767px) {
   .hero {
     width: 100vw;

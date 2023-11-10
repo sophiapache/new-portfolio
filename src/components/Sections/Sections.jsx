@@ -39,20 +39,6 @@ const Sections = ({ selectView, setView }) => {
 
   function handleClick(view) {
     setView(view);
-    // switch (view) {
-    //   case "ABOUT ME":
-    //     <Route exact path="/">
-    //       <Redirect to="/aboutme" />
-    //     </Route>;
-    //     console.log("about me");
-    //     break;
-    //   case "WORK":
-    //     // Additional actions for the "work" case
-    //     break;
-    //   default:
-    //     console.log("View is neither 'about me' nor 'work'");
-    //   // Additional actions for other cases
-    // }
   }
 
   return (

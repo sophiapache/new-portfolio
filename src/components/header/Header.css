@@ -4,3 +4,23 @@
   align-items: center; /* Vertically center the components */
   height: 10vh; /* Adjust the height as needed */
 }
+.subHeaderContainer {
+  display: flex;
+  flex: 1; /* Allows the left component to expand to fill available space */
+  padding: 20px; /* Adjust padding as needed */
+  /* width: 298px;
+  height: 10vh;
+  flex-direction: column;
+  justify-content: center; */
+  color: #fff;
+
+  font-family: "Press Start 2P";
+  font-size: 8vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.element {
+  cursor: pointer;
+}

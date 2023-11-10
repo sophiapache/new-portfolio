@@ -1,0 +1,9 @@
+.hero {
+  background-image: url("arcade.jpg");
+  height: 90vh;
+  width: 40vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  background-position: center center;
+}
