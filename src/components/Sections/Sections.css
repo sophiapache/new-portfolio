@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-.sections {
+/* .sections {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
@@ -7,11 +7,11 @@
   left: 40.5%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0);
-}
+} */
 
-.sections div {
-  /* aspect-ratio: 2 / 1; */
-  display: flex;
+/* .sections div { */
+/* aspect-ratio: 2 / 1; */
+/* display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -20,12 +20,60 @@
   background-color: rgba(0, 0, 0, 0);
   color: white;
   /* font-family: "Play"; */
-  font-family: "Press Start 2P";
+/* font-family: "Press Start 2P";
   font-style: normal;
   font-weight: 500;
-  font-size: 10px;
+  font-size: 10px; */
+/* } */
+
+.sections {
+  display: inline-block;
+  font-family: "Press Start 2P";
+  color: white;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  top: 33%;
+  left: 42%;
+  font-size: 0.8vw;
 }
 
 .selected {
   color: red;
+}
+
+.sectionsBox {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+}
+
+.sectionsBox p {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.sectionsBox img {
+  height: 28vh;
+  width: 15vw;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  left: 0%;
+  font-size: 2vw;
+  cursor: pointer;
+  width: 15vw;
+  height: 3vh;
+  padding: 0px 0px;
+}
+
+.navIcons {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0px 10px;
+  height: 3vh;
 }

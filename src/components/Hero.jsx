@@ -91,7 +91,9 @@ const Hero = () => {
           repeat={Infinity}
           className="ArcadeTitle"
         />
-        <Sections selectView={selectView} setView={setView} />
+        <div className="sections">
+          <Sections selectView={selectView} setView={setView} />
+        </div>
       </div>
     );
   }
