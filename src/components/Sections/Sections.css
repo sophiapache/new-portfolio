@@ -77,3 +77,27 @@
   padding: 0px 10px;
   height: 3vh;
 }
+
+@media screen and (max-width: 500px) {
+  .sections {
+    top: 22%;
+    left: 30%;
+  }
+
+  .sectionsBox {
+    width: 40vw;
+    font-size: 2vw;
+  }
+  .sectionsBox img {
+    height: 10vh;
+    width: 20vw;
+  }
+
+  .navIcons {
+    height: 1vh;
+  }
+
+  .nav {
+    font-size: 10vw;
+  }
+}

@@ -42,13 +42,15 @@
   padding: 40px 1px 50px 1px;
 }
 
-@media screen and (max-width: 767px) {
-  /* .hero {
-    width: 100vw;
+@media screen and (max-width: 500px) {
+  .hero {
+    background-position: top;
   }
 
   .ArcadeTitle {
-    left: 8%;
-    width: 80vw;
-  } */
+    width: 20vw;
+    top: 17%;
+    left: 35%;
+    font-size: 1vh;
+  }
 }
