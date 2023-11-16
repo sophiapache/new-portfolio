@@ -24,3 +24,9 @@
 .element {
   cursor: pointer;
 }
+
+@media screen and (max-width: 500px) {
+  .headerContainer {
+    padding: 20px;
+  }
+}
