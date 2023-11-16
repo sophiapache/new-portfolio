@@ -52,7 +52,7 @@ const Hobbies = () => {
             style={{
               height: "250px",
               width: "450px",
-              padding: "20px 200px 50px",
+              padding: "20px 110px 50px",
               fontFamily: "'Press Start 2P', sans-serif",
               color: "white",
             }}
