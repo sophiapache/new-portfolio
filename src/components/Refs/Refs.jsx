@@ -10,9 +10,10 @@ const Refs = () => {
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         style={{
           height: "50vw",
-          width: "120vw",
+          width: "100vw",
           backgroundSize: "cover",
-          padding: "100px 200px 50px",
+          // padding: "100px 200px 50px",
+          padding: "50px",
           fontFamily: "'Press Start 2P', sans-serif",
           color: "white",
         }}

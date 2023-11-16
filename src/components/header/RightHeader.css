@@ -17,6 +17,6 @@
 
 @media screen and (max-width: 500px) {
   .rightHeader {
-    flex-wrap: wrap;
+    display: none;
   }
 }
