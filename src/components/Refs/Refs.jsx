@@ -16,6 +16,7 @@ const Refs = () => {
           fontFamily: "'Play', sans-serif",
           color: "white",
           lineHeight: "25px",
+          fontSize: "20px",
         }}
       >
         <Grid item xs={6}>

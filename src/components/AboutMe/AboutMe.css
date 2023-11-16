@@ -24,12 +24,12 @@
   position: absolute;
 }
 
-.description {
+/* .description {
   position: absolute;
   top: 30%;
   left: 60%;
   display: flex;
-}
+} */
 
 @media screen and (max-width: 500px) {
   .aboutme {
@@ -39,6 +39,6 @@
   .description {
     left: 5%;
     top: 50%;
-    width: 100vw;
+    width: 80vw;
   }
 }

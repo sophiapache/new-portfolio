@@ -11,9 +11,8 @@ const AboutMe = () => {
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         style={{
           height: "50vw",
-          width: "100vw",
           // padding: "100px 200px 50px",
-          padding: "50px",
+
           fontFamily: "'Play', sans-serif",
           color: "white",
           lineHeight: "25px",

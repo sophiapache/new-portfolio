@@ -1,8 +1,7 @@
 .work {
-  display: flex;
   color: #fff;
   font-family: "Red Hat Mono";
-  left: 20%;
+  left: 10%;
   top: 30%;
   font-size: 50px;
   font-style: normal;
@@ -12,7 +11,6 @@
 }
 
 .divider {
-  display: flex;
   background-color: #fff;
   font-family: "Red Hat Mono";
   top: 30%;
@@ -21,22 +19,17 @@
   font-weight: 600;
   line-height: normal;
   width: 10px;
-  height: 60vh;
-  margin: 0 50px;
+  height: 90vh;
 }
 
 .companyTitle {
-  display: flex;
   color: #fff;
   font-family: "Red Hat Mono";
-  left: 80%;
   width: 50vw;
   font-size: 30px;
   font-style: normal;
   /* font-weight: 600; */
   line-height: normal;
-  position: absolute;
-  margin: 0 50px;
 }
 
 .companyTitleContainer {
@@ -47,12 +40,13 @@
 
 .element {
   padding: 15px;
-  font-size: 50px;
+  font-size: 30px;
 }
 
-.description {
+.workDescription {
   margin-top: 50px;
   width: 50vw;
+  font-size: 17px;
 }
 
 .skillsContainer {
@@ -63,9 +57,13 @@
 
 @media screen and (max-width: 650px) {
   .work {
-    left: 5%;
+    font-size: 30px;
+    position: static;
   }
   .companyTitle {
-    width: 30vw;
+    font-size: 6vw;
+  }
+  .workDescription {
+    font-size: 4vw;
   }
 }
