@@ -33,7 +33,7 @@ const sections = [
   {
     id: 7406,
     view: "HOBBIES",
-    image: "imgs/fall.png",
+    image: "imgs/spring.png",
   },
 ];
 

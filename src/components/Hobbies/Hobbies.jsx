@@ -7,37 +7,43 @@ const hobbies = [
     id: 3721,
     icon: "ic:outline-backpack",
     title: "BACKPACKING",
-    description: "one",
+    description:
+      "I solo-backpacked for two years, reaching Europe, throughout the Americas, and Australia.",
   },
   {
     id: 5498,
     icon: "iconoir:yoga",
     title: "YOGA",
-    description: "two",
+    description:
+      "I have taking yoga classes for six years, dabbling in Aerial yoga, acro yoga, and traditional flows.",
   },
   {
     id: 1867,
     icon: "icon-park-outline:writing-fluently",
     title: "WRITING",
-    description: "three",
+    description:
+      "My first poetry piece, Lost Paradise, was published in a literary magazine called Flora Fiction in June 2023!",
   },
   {
     id: 9374,
     icon: "bxs:cat",
     title: "VOLUNTEERING",
-    description: "four",
+    description:
+      "I volunteer at a local cat rescue called CJPaws and take care of cats ready to be adopted.",
   },
   {
     id: 6025,
     icon: "ph:guitar",
     title: "BASS GUITAR",
-    description: "five",
+    description:
+      "I am self-learning with my Squier bass and using the app Fender Play.",
   },
   {
     id: 8143,
     icon: "ic:baseline-surfing",
     title: "SURFING",
-    description: "six",
+    description:
+      "I spent most of my time traveling surfing and find I feel most at peace in the water.",
   },
 ];
 const Hobbies = () => {

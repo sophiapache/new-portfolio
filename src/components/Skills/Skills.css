@@ -2,7 +2,7 @@
   display: flex;
   color: #fff;
   font-family: "Red Hat Mono";
-  left: 40%;
+  left: 50%;
   top: 20%;
   font-size: 50px;
   font-style: normal;
@@ -17,4 +17,9 @@
   left: 20%;
   color: #fff;
   font-family: "Red Hat Mono";
+}
+
+.skillsElement {
+  width: 3em;
+  font-size: 50px;
 }

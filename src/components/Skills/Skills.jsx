@@ -5,6 +5,7 @@ const Skills = () => {
   return (
     <div className="skillsContainer">
       <div className="skills">SKILLS</div>
+
       <div className="skillsIcons">
         <SkillsIcons />
       </div>
