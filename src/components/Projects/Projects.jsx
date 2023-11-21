@@ -8,8 +8,8 @@ const projects = [
     title: "PORTFOLIO",
     description: "Original portfolio.",
     tech: "JavaScript, HTML, CSS",
-    code: "",
-    demo: "",
+    code: "https://github.com/sophiapache/portfolio",
+    demo: "https://sophiapache.github.io/portfolio/",
   },
   {
     id: 5498,
@@ -116,7 +116,7 @@ const Projects = () => {
                 style={{
                   backgroundColor: "rgba(0,0,0,0)",
                   marginBottom: "15px",
-                  width: "20vw",
+                  width: "300px",
                 }}
               >
                 {project.title}
@@ -127,7 +127,7 @@ const Projects = () => {
                   fontSize: "14px",
                   marginBottom: "15px",
                   fontFamily: "'Play', sans-serif",
-                  width: "20vw",
+                  width: "300px",
                 }}
               >
                 {project.description}
@@ -137,7 +137,7 @@ const Projects = () => {
                   backgroundColor: "rgba(0,0,0,0)",
                   fontSize: "18px",
                   fontFamily: "'Play', sans-serif",
-                  width: "20vw",
+                  width: "300px",
                   marginBottom: "15px",
                 }}
               >
