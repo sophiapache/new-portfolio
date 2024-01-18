@@ -1,8 +1,6 @@
-import "./Sections.css";
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { useTransition, animated } from "@react-spring/web";
 import Nav from "./Nav";
-import { Icon } from "@iconify/react";
 
 const sections = [
   {
@@ -70,23 +68,38 @@ const Sections = ({ selectView, setView }) => {
     }
   }
 
+  const transitions = useTransition(selectIndex, {
+    from: { opacity: 0, transform: "translate3d(100%,0,0)" },
+    enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
+    leave: { opacity: 0, transform: "translate3d(-50%,0,0)" },
+  });
   return (
     <div className="sections">
-      <div key={sections[selectIndex].id} className="sectionsBox">
-        <img
-          src={sections[selectIndex].image}
-          onClick={() => handleClick(sections[selectIndex].view)}
-        />
-        <p>{sections[selectIndex].view}</p>
-        <p>
-          <Nav
-            handleNav={handleNav}
-            setCarousel={setCarousel}
-            selectCarousel={selectCarousel}
+      {transitions((style, i) => (
+        <animated.div
+          key={sections[i].id}
+          className="sectionsBox"
+          style={{
+            ...style,
+          }}
+        >
+          <img
+            src={sections[i].image}
+            alt={sections[i].view}
+            onClick={() => handleClick(sections[i].view)}
           />
-        </p>
-      </div>
+          <p>{sections[i].view}</p>
+          <p>
+            <Nav
+              handleNav={handleNav}
+              setCarousel={setCarousel}
+              selectCarousel={selectCarousel}
+            />
+          </p>
+        </animated.div>
+      ))}
     </div>
   );
 };
+
 export default Sections;

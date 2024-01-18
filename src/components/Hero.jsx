@@ -9,7 +9,7 @@ import Projects from "../components/Projects/Projects";
 import Refs from "../components/Refs/Refs";
 import Hobbies from "../components/Hobbies/Hobbies";
 import Subheader from "../components/header/Subheader";
-import React, { useState, useEffect } from "react";
+import React, { useState, CSSProperties, useEffect } from "react";
 
 const Hero = () => {
   const [selectView, setView] = useState("");
