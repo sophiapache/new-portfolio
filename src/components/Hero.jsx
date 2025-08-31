@@ -77,14 +77,11 @@ const Hero = () => {
         <div className="hero" />
         <TypeAnimation
           sequence={[
-            "Hello World!", // Types 'One'
-            1000, // Waits 1s
-            "I am a front-end developer.", // Deletes 'One' and types 'Two'
-            2000, // Waits 2s
-            // "Two Three", // Types 'Three' without deleting 'Two'
-            () => {
-              console.log("Sequence completed");
-            },
+            "Hello World!",
+            1000,
+            "I am a full-stack developer.",
+            2000,
+            () => {},
           ]}
           wrapper="span"
           cursor={true}

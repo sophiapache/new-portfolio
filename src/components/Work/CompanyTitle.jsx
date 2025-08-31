@@ -5,6 +5,25 @@ const CompanyTitle = () => {
   return (
     <div className="companyTitle">
       <Icon icon="simple-icons:applearcade" className="element" />
+      DISPEL
+      <div className="workDescription">
+        <p>
+          • Delivering new features and UI improvements on the Dispel dashboard,
+          while deprecating legacy packages, reducing technical debt and
+          enhancing customer usability for long-term scalability.
+        </p>
+        <p>
+          • Patched 300+ package vulnerabilities and built a vulnerability
+          reporting system, strengthening compliance toward FedRAMP standards.
+        </p>
+        <p>
+          • Implemented Playwright automated testing framework with 50+
+          automated tests and adapted flows/permissions, while redesigning CI/CD
+          strategy to separate P1 test runs from full suite runs, reducing
+          regression bugs and cutting pipeline execution time by 40%.
+        </p>
+      </div>
+      <Icon icon="simple-icons:applearcade" className="element" />
       PK INFORMATION SYSTEMS
       <div className="workDescription">
         <p>
