@@ -1,6 +1,6 @@
 import "./Sections.css";
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import Nav from "./Nav";
 import { Icon } from "@iconify/react";
 
